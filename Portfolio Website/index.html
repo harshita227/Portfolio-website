@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <nav class="nav-bar">
+          <!-- <img src="assets/images/logo.png" class="logo" /> -->
+          <button class="card-link btn-logo">Logo</button>
+          <ul class="nav" id="sidemenu">
+            <li class="nav__item"><a href="#home">Home</a></li>
+            <li class="nav__item"><a href="#about">About</a></li>
+            <li class="nav__item"><a href="#services">Services</a></li>
+            <li class="nav__item"><a href="#">Portfolio</a></li>
+            <li class="nav__item"><a href="#contact">Contact</a></li>
+            <i class="bi bi-x" onclick="closeMenu()"></i>
+          </ul>
+          <i class="bi bi-layout-sidebar-inset" onclick="openMenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>Web Developer</p>
+          <h1>Hi, I'm <span>Harshita</span></h1>
+        </div>
+      </div>
+    </header>
+    <!--About-->
+    <div class="about" id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col col-4">
+            <img
+              src="assets/images/back.jpg"
+              height="500px"
+              class="about__img"
+            />
+          </div>
+          <div class="col col-8">
+            <div class="about-top">
+              <h1 class="sub-title">About Me</h1>
+              <p>
+                To obtain an entry-level position in frontend development at a
+                respected organization, leveraging my educational qualifications
+                and hands-on internship experience to contribute to the growth
+                and success of the company. To obtain an entry-level position in
+                frontend development at a respected organization, leveraging my
+                educational qualifications and hands-on internship experience to
+                contribute to the growth and success of the company. To obtain
+                an entry-level position in frontend development at a respected
+                organization, leveraging my educational qualifications and
+                hands-on internship experience to contribute to the growth and
+                success of the company.
+              </p>
+            </div>
+            <div class="about-bottom">
+              <div class="tab-titles">
+                <p class="tab__links active-link">Skills</p>
+                <p class="tab__links">Experience</p>
+                <p class="tab__links">Certificates</p>
+                <p class="tab__links">Education</p>
+              </div>
+              <div class="tab__contents" id="skills">
+                <ul>
+                  <li>Web Development -Html,Css,JavaScript</li>
+                  <li>Bootstrap ,Saas,TypeScript</li>
+                  <li>Programming language - Core Java, PHP</li>
+                  <li>Android App Development</li>
+                  <li>Databases - MySql</li>
+                  <li>framework -Spring,SpringBoot</li>
+                </ul>
+              </div>
+              <div class="tab__contents" id="experience">
+                <ul>
+                  <li>
+                    Done 6 months internship as frontend Developer at Iron
+                    Network Company, Mohali.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab__contents" id="certificates">
+                <ul>
+                  <li>
+                    Android Development with the help of Internshala Online
+                    Platform.
+                  </li>
+                  <li>
+                    Training of 6 months in Java and SpringBoot with the help of
+                    Coding Block Institute Hisar.
+                  </li>
+                </ul>
+              </div>
+              <div class="tab__contents" id="education">
+                <ul>
+                  <li>
+                    Bachelor’s in Computer Application
+                    <br />
+                    Guru Jambheshwar University of Science & Technology, Hisar
+                  </li>
+                  <li>
+                    Master of Computer Application <br />
+                    Guru Jambheshwar University of Science & Technology, Hisar
+                  </li>
+                  <li>
+                    12" Grade
+                    <br />
+                    Crm Jat Sr. Sec. School, Hisar
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- My Services -->
+    <div class="services" id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="row">
+          <div class="col col-6">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-code-slash icon"></i>
+                <h4 class="card-subtitle">Create Web Pages Designs</h4>
+                <p class="card-text">
+                  Developed highly engaging and user-friendly web pages with
+                  interactive elements using HTML, CSS, and JavaScript.
+                  Integrated features such as dynamic content updates, form
+                  validation, and animated elements to enhance user experience.
+                  Ensured cross-browser compatibility and responsive design for
+                  seamless performance across all devices.
+                </p>
+                <button class="card-link">Go To Web Pages</button>
+              </div>
+            </div>
+          </div>
+          <div class="col col-6">
+            <div class="card">
+              <div class="card-body">
+                <i class="bi bi-crop icon"></i>
+                <h4 class="card-subtitle">E-commerce Web-site</h4>
+                <p class="card-text">
+                  Developed a feature-rich e-commerce website. Key features
+                  include a responsive navbar with an add-to-cart button.
+                  created additional pages such as About, Product, and Contact.
+                  Enhanced user experience with toast notifications and a
+                  dynamic footer. Ensured a seamless, responsive design and
+                  optimized performance.
+                </p>
+                <button class="card-link">Go To Web-site</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="contact" id="contact">
+      <div class="container">
+        <div class="row">
+          <h1 class="sub-title">Contact Me</h1>
+          <div class="col col-12">
+            <div class="contact-item">
+              <a href="#" class="contact-link"
+                ><i class="bi bi-send social-icon"></i
+              ></a>
+              <span class="contact-text">abc123@gmail.com</span>
+            </div>
+          </div>
+          <div class="col col-12">
+            <div class="contact-item">
+              <a href="#" class="contact-link"
+                ><i class="bi bi-telephone social-icon"></i
+              ></a>
+              <span class="contact-text">+00 000 000 00</span>
+            </div>
+          </div>
+          <div class="col col-12">
+            <div class="social-icons">
+              <a href="#"><i class="bi bi-linkedin social-icon"></i></a>
+              <a href="#"><i class="bi bi-github social-icon"></i></a>
+              <a href="#"><i class="bi bi-chat social-icon"></i></a>
+            </div>
+          </div>
+          <div class="col col-12">
+            <div class="resume-link">
+              <button class="resume-btn lg">Download Resume</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>
